@@ -26,6 +26,10 @@ var requestConfig = [
         'answerFn': answers.shutdown
     },
     {
+        'pattern': ['recipe.*'],
+        'answerFn': answers.recipe
+    },
+    {
         'pattern': ['hi', 'hello', 'hey'],
         'answerFn': answers.hello
     },
