@@ -1,0 +1,43 @@
+{
+  "name": "betty-botssi",
+  "version": "1.0.0",
+  "description": "A chatbot for cooking and recipes",
+  "main": "bot.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/metaodi/betty-botssi"
+  },
+  "keywords": [
+    "slack",
+    "bot",
+    "cooking",
+    "recipe",
+    "betty",
+    "ingredients"
+  ],
+  "author": "Stefan Oderbolz <odi@metaodi.ch> (http://metaodi.ch/)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/metaodi/betty-botssi/issues"
+  },
+  "homepage": "https://github.com/metaodi/betty-botssi",
+  "dependencies": {
+    "async": "^1.5.2",
+    "botkit": "0.0.5",
+    "superagent": "^1.7.0",
+    "underscore": "^1.8.3",
+    "xregexp": "^3.0.0"
+  },
+  "devDependencies": {
+    "gulp": "^3.8.10",
+    "gulp-jscs": "^3.0.2",
+    "gulp-jshint": "^2.0.0",
+    "gulp-util": "^3.0.1",
+    "jshint-stylish": "^2.1.0",
+    "mocha": "~2.3.4",
+    "should": "~8.1.1"
+  }
+}
