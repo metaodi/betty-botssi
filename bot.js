@@ -4,13 +4,16 @@ var _ = require('underscore');
 var controller = Botkit.slackbot();
 var answers = require('./lib/answers');
 
-var betty = controller.spawn({
-  token: process.env.token
-});
-betty.startRTM(function(err,bot,payload) {
-  if (err) {
-    throw new Error('Could not connect to Slack');
-  }
+var tokens = process.env.token.split(" ");
+_.each(tokens, function(token) {
+    var betty = controller.spawn({
+      token: process.env.token
+    });
+    betty.startRTM(function(err,bot,payload) {
+      if (err) {
+        throw new Error('Could not connect to Slack');
+      }
+    });
 });
 
 function matcher(text) {
