@@ -7,10 +7,11 @@ var answers = require('./lib/answers');
 var tokens = process.env.token.split(" ");
 _.each(tokens, function(token) {
     var betty = controller.spawn({
-      token: process.env.token
+      token: token
     });
     betty.startRTM(function(err,bot,payload) {
       if (err) {
+        console.log(err);
         throw new Error('Could not connect to Slack');
       }
     });
