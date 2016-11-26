@@ -45,6 +45,7 @@ var requestConfig = [
 
 
 controller.hears(['.*'], ['direct_message,direct_mention'], function(bot, message) {
+    console.log("Bot heard message (" + message.ts + "): " + message.text);
     var noAnswer = _.every(requestConfig, function(request) {
         var matched = _.any(request.pattern, matcher(message.text));
         if (matched) {
