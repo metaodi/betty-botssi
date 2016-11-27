@@ -7,7 +7,10 @@ pm2.connect(function() {
   pm2.start({
     script    : 'bot.js',
   }, function(err) {
-    if (err) return console.error('Error while launching applications', err.stack || err);
+    if (err) {
+        console.error('Error while launching applications', err.stack || err);
+        return;
+    }
     console.log('PM2 and application has been succesfully started');
     
     // Display logs in standard output 
