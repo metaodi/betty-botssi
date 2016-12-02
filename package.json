@@ -4,8 +4,7 @@
   "description": "A chatbot for cooking and recipes",
   "main": "bot.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "preinstall": "npm i -g pm2 && pm2 install pm2-logrotate"
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
@@ -28,7 +27,6 @@
   "dependencies": {
     "async": "^1.5.2",
     "botkit": "0.0.5",
-    "pm2": "^2.1.5",
     "superagent": "^1.7.0",
     "underscore": "^1.8.3",
     "xregexp": "^3.0.0"
