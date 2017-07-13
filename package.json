@@ -39,5 +39,8 @@
     "jshint-stylish": "^2.1.0",
     "mocha": "~2.3.4",
     "should": "~8.1.1"
+  },
+  "engines": {
+    "node": ">=4.8.4"
   }
 }
