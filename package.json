@@ -26,7 +26,7 @@
   "homepage": "https://github.com/metaodi/betty-botssi",
   "dependencies": {
     "async": "^1.5.2",
-    "botkit": "0.0.6",
+    "botkit": "0.4.4",
     "superagent": "^1.7.0",
     "underscore": "^1.8.3",
     "xregexp": "^3.0.0"
