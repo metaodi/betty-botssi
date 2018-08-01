@@ -27,7 +27,7 @@
   "dependencies": {
     "async": "^1.5.2",
     "botkit": "0.0.6",
-    "superagent": "^1.7.0",
+    "superagent": "^3.8.1",
     "underscore": "^1.8.3",
     "xregexp": "^3.0.0"
   },
